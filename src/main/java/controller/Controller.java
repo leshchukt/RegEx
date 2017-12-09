@@ -71,7 +71,7 @@ public class Controller {
                     ));
                     uniqueLogin = true;
                 } catch (NotUniqueLoginException e) {
-                    System.out.println(e.getMessage());
+                    System.err.println(e.getMessage());
                     System.out.println("Error occupied during creation of new note! Reenter the nickname, please: ");
                     nickname = utilityController.inputStringValueWithRegEx(view.nicknameInput, view.nicknameRegex);
                 }
